@@ -1,0 +1,23 @@
+We want to show a table with <%= @number_of_lines %> lines.
+
+<% if @number_of_lines > 10 %>
+  We will have a lot of lines
+<% else %>
+  We are going to have a moderate number of lines
+<% end %>
+
+<table>
+  <% 1.upto(@number_of_lines).each do |num| %>
+  <tr>
+    <td>
+      <%= num %>
+    </td>
+    <td>
+      Another column
+    </td>
+    <td>
+      Yet another column
+    </td>
+  </tr>
+  <% end %>
+</table>

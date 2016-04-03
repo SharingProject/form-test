@@ -1,0 +1,18 @@
+<h1>
+  Here is my form for inputting data
+</h1>
+
+<%= form_tag exercises_path do |form| %>
+  Your school: </br>
+  <input type="text" name="school" />
+
+  <hr />
+
+  Your age: </br>
+  <input type="text" name="age" />
+
+  <%= search_field_tag(:user, :name) %>
+
+  <hr />
+  <input type="submit" value="Submit data NOW!" />
+<% end %>

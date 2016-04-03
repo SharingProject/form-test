@@ -1,0 +1,8 @@
+<h1>My blog posts</h1>
+
+<% @blog_entries.each do |blog_entry| %>
+  <h2><%= blog_entry.title %></h2>
+  <p><%= blog_entry.body %></p>
+<% end %>
+
+<a href="/blogs/new">Add a blog entry</a>
