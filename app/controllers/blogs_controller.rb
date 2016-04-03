@@ -1,5 +1,3 @@
-require 'pry'
-
 class BlogsController < ApplicationController
   def index
     @blog_entries = Blog.all
